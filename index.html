@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pago con Tarjeta de Crédito</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h2>Información de Pago</h2>
+    <form id="paymentForm">
+      <div class="form-group">
+        <label for="cardNumber">Número de Tarjeta:</label>
+        <input type="text" id="cardNumber" name="cardNumber" placeholder="1234 5678 9012 3456" required>
+      </div>
+      <div class="form-group">
+        <label for="cardName">Nombre del Titular:</label>
+        <input type="text" id="cardName" name="cardName" required>
+      </div>
+      <div class="form-group">
+        <label for="expiryDate">Fecha de Vencimiento:</label>
+        <input type="text" id="expiryDate" name="expiryDate" placeholder="MM/YY" required>
+      </div>
+      <div class="form-group">
+        <label for="securityCode">Código de Seguridad:</label>
+        <input type="text" id="securityCode" name="securityCode" placeholder="CVC" required>
+      </div>
+      <button type="submit">Pagar</button>
+    </form>
+  </div>
+</body>
+</html>
